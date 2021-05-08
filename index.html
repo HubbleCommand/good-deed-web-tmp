@@ -3,18 +3,41 @@ layout: default
 ---
 
 <div class="home">
+  <h1 class="page-heading">Welcome to Good Deed!</h1>
+  <div>
+    Good Deed is a social media platform for sharing all the good in the world.
+  </div><br>
+  <div>
+    Anyone can join and post "Deeds" they have done or seen for everyone else to see, tagging other users that either did or recieved the deed.
+  </div><br>
+  <div>
+    Join us in sharing the good people can do!
+  </div><br>
+  <div>
+    In the future we plan on providing a proper web-based interface as well. Stay tuned!
+  </div><br>
+  <br><br>
 
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% assign psize = site.posts | size %}
+    {% if psize == 0 %}
+      <div>
+        There are currently no posts. Check back later!
+      </div>
+    {% else %}
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    {% endif %}
+
+    
   </ul>
 </div>

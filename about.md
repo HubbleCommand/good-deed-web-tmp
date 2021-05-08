@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Welcome to Good Deed!
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Over the last few years, news and social media focuses on all the bad stuff happening in the word : the "exciting" stuff.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+With Good Deed, we hope to change the focus of the news you see, by showing you all the good people do around the world.
+
+No deed is too small, so get sharing today!
+
+
